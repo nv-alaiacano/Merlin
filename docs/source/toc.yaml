@@ -6,8 +6,33 @@ subtrees:
         title: Introduction
       - file: guide/recommender_system_guide.rst
         title: Recommender System Guide
+      - file: getting_started/getting_started.md
+        title: Getting Started
+        subtrees:
+          - titlesonly: True
+            entries:
+            - file: getting_started/install.md
+              title: Installation
+            - file: getting_started/core_concepts.md
+              title: Core Concepts
+      - file: nvtabular/index.md
+        title: NVTabular
+        subtrees:
+          - titlesonly: True
+            entries:
+            - file: nvtabular/01-Getting-Started.ipynb
+              title: Getting Started With NVTabular
+            # - file: nvtabular/02-Advanced-NVTabular-workflow.ipynb
+            #   title: Advanced NVTabular Workflows
+      - file: examples/quick_start/index.md
+        title: Quick-Start Guide
+        subtrees:
+          - titlesonly: True
+            entries:
+            - file: examples/quick_start/ranking.md
+              title: Ranking Models
       - file: examples/index
-        title: Example Notebooks
+        title: End-To-End Example Notebooks
         subtrees:
           - titlesonly: True
             entries:
@@ -54,3 +79,5 @@ subtrees:
                     title: Deploy the TensorFlow Model with Triton
       - file: containers.rst
       - file: support_matrix/index.rst
+      - file: CHANGELOG.md
+        title: Changelog

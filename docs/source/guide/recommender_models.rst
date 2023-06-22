@@ -12,7 +12,7 @@ This guide explains the different type of recommender models with a focus on dee
 A ``recommender model`` is a single model, e.g. rule-based or trained one, which outputs a score or set of candidates. Generating final recommendations often requires multiple steps, called ``recommender systems``.
 
 Ranking Models
--------------
+--------------
 
 .. image:: ./imgs/models_ranking.png
 
@@ -33,7 +33,7 @@ Resources for Ranking Models:
 * `Scaling Criteo <https://github.com/NVIDIA-Merlin/Merlin/tree/stable/examples/scaling-criteo>`_ is similar to the MovieLens example, but on a large scale of ~4 billion rows. The example provides some guidance on multi-GPU scaling.
 
 Retrieval Models
--------------
+----------------
 
 .. image:: ./imgs/models_retrieval.png
 
@@ -48,14 +48,14 @@ The dataset for retrieval models (Figure 2a) looks similar than in the ranking u
 Merlin Models provides implementations for Matrix Factorization (MF) and Two-Tower architectures. 
 
 Resources for Retrieval Models:
-^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * `Retrieval Models <https://github.com/NVIDIA-Merlin/models/blob/stable/examples/05-Retrieval-Model.ipynb>`_ is an example to build matrix factorization and two-tower models using negative sampling with **Merlin Models in TensorFlow**.
 * `Scale faster with less code using Two Tower with Merlin <https://medium.com/nvidia-merlin/scale-faster-with-less-code-using-two-tower-with-merlin-c16f32aafa9f?source=friends_link&sk=be70da36948c883b4f15a745470146ee>`_ is our blog post providing more details on Two-Tower models.
 * `Solving the Cold-Start Problem using Two-Tower Neural Networks for NVIDIA’s E-Mail Recommender Systems <https://medium.com/nvidia-merlin/solving-the-cold-start-problem-using-two-tower-neural-networks-for-nvidias-e-mail-recommender-2d5b30a071a4?source=friends_link&sk=b06b93495fa017162875a8917e3aa975>`_ is our blog post sharing our experience in applying Two-Tower models to our e-mail use case.
 
 Sequential and Session-Based Models
--------------
+-----------------------------------
 
 .. image:: ./imgs/models_sequentialinteactions.png
 
