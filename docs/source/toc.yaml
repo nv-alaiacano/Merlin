@@ -4,8 +4,6 @@ subtrees:
     entries:
       - file: README.md
         title: Introduction
-      - file: guide/recommender_system_guide.rst
-        title: Recommender System Guide
       - file: getting_started/getting_started.md
         title: Getting Started
         subtrees:
@@ -15,8 +13,15 @@ subtrees:
               title: Installation
             - file: getting_started/core_concepts.md
               title: Core Concepts
+            # - file: examples/quick_start/index.md
+            #   title: Quick-Start Guide
+            #   subtrees:
+            #     - titlesonly: True
+            #       entries:
+            #       - file: examples/quick_start/ranking.md
+            #         title: Ranking Models
       - file: nvtabular/index.md
-        title: NVTabular
+        title: Feature Engineering with NVTabular
         subtrees:
           - titlesonly: True
             entries:
@@ -24,13 +29,13 @@ subtrees:
               title: Getting Started With NVTabular
             # - file: nvtabular/02-Advanced-NVTabular-workflow.ipynb
             #   title: Advanced NVTabular Workflows
-      - file: examples/quick_start/index.md
-        title: Quick-Start Guide
+      - file: models/index.md
+        title: Modeling with Merlin Models
         subtrees:
           - titlesonly: True
             entries:
-            - file: examples/quick_start/ranking.md
-              title: Ranking Models
+            - file: models/01-Getting-Started.ipynb
+              title: Getting Started With Merlin Models
       - file: examples/index
         title: End-To-End Example Notebooks
         subtrees:
@@ -59,10 +64,10 @@ subtrees:
                     title: Building the Recommender System
                   - file: examples/Building-and-deploying-multi-stage-RecSys/02-Deploying-multi-stage-RecSys-with-Merlin-Systems.ipynb
                     title: Deploying the Recommender System with Triton
-              - file: examples/sagemaker-tensorflow/index.md
-                title: Merlin and AWS SageMaker
-                entries:
-                  - file: examples/sagemaker-tensorflow/sagemaker-merlin-tensorflow.ipynb
+              # - file: examples/sagemaker-tensorflow/index.md
+              #   title: Merlin and AWS SageMaker
+              #   entries:
+              #     - file: examples/sagemaker-tensorflow/sagemaker-merlin-tensorflow.ipynb
               - file: examples/scaling-criteo/index.md
                 entries:
                   - file: examples/scaling-criteo/01-Download-Convert.ipynb
@@ -77,7 +82,23 @@ subtrees:
                     title: Deploy the HugeCTR Model with Triton
                   - file: examples/scaling-criteo/04-Triton-Inference-with-Merlin-Models-TensorFlow.ipynb
                     title: Deploy the TensorFlow Model with Triton
+      - file: guide/recommender_system_guide.rst
+        title: Recommender System Guide
+
+      - file: cloud_providers.md
+        title: Cloud Integration
+        subtrees:
+          - titlesonly: True
+            entries:
+            - file: examples/sagemaker-tensorflow/index.md
+              title: Cloud Integration Examples
+              entries:
+              - file: examples/sagemaker-tensorflow/sagemaker-merlin-tensorflow.ipynb
+
+
       - file: containers.rst
-      - file: support_matrix/index.rst
-      - file: CHANGELOG.md
-        title: Changelog
+        title: Release Information
+        entries:
+          - file: support_matrix/index.rst
+          - file: CHANGELOG.md
+            title: Changelog
